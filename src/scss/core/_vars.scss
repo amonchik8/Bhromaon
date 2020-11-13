@@ -1,0 +1,37 @@
+//Colors
+$WHITE: #fff;
+$BLACK: #000;
+$LIGHTENBLACK:#232323;
+$DARKENBLUE: #5474fd;
+
+$BUTTON-COLOR: $DARKENBLUE;
+$P-HOLDER-COLOR: #999999;
+$FONT-COLOR: #e8e8e8;
+$ICON-SEARCH-COLOR: $DARKENBLUE;
+$ICON-SELECT-COLOR: #ff6363;
+$ICON-BOOK-COLOR: #00a2ff;
+$BG-SECTION-COLOR: #333333;
+$BG-BOX-COLOR: $LIGHTENBLACK;
+$FOOTER-COLOR: $LIGHTENBLACK;
+
+
+// Fonts
+
+$BASE-FONT: 'Josefin Sans', sans-serif;
+$SECONDARY-FONT: 'Aleo', serif;
+$base-font-size: 16px;
+
+//Font Sizes
+@function calcRem($size) {
+    $remSize: $size / $base-font-size;
+    @return #{$remSize}rem;
+}
+
+
+$H48: calcRem(48px);
+$H36: calcRem(36px);
+$H24: calcRem(24px);
+$H22: calcRem(22px);  
+$H20: calcRem(20px);
+$H16: calcRem(16px);
+$H14: calcRem(14px);
