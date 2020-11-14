@@ -1,0 +1,14 @@
+.scroll {
+    @include text($H14, 400,$WHITE);
+    font-family: $BASE-FONT;
+    text-align: center;
+    letter-spacing: 2.8px;
+    margin-bottom: 15px;
+    @include flex-col;
+    &__icon {
+        display: flex;
+        text-align: center;
+        margin-bottom: 135px;
+        justify-content: center;
+    }
+}

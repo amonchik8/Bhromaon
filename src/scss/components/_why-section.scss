@@ -1,0 +1,33 @@
+.why-section {
+    background-image: url(../assets/images/why-section.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    &__container {
+        padding: 120px 24px;
+    }
+    &__main {
+        @include media() {
+            @include flex();
+        }
+        @include flex(center, center);
+        flex-wrap: wrap;
+        
+    }
+    &__title {
+        @include text($H36, 400, $WHITE);
+        font-family: $SECONDARY-FONT;
+        margin-bottom: 62px;
+        text-transform: none;
+        text-align: center;
+        @include media() {
+            text-align: left;
+        }
+    }
+    &__box {
+        @include media() {
+            margin-right: 105px;
+        }
+        
+    }
+}

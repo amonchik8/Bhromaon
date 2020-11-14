@@ -1,0 +1,33 @@
+.image-box {
+    @include flex-col;
+    max-width: 475px;
+    flex-basis: 50%;
+    &__item-1 {
+    background-image: url(../assets/images/whychoose-1.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 120px;
+    max-width: 350px;
+    margin-bottom: 3px;
+    @include media() {
+        height: 220px;
+        max-width: 350px;
+        background-size: cover;
+    }
+    }
+    &__item-2 {
+    background-image: url(../assets/images/whychoose-2.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 120px;
+    max-width: 350px;
+    margin-bottom: 3px;
+    @include media() {
+        height: 220px;
+        max-width: 350px;
+        background-size: cover;
+    }
+}
+}

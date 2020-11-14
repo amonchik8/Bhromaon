@@ -1,0 +1,54 @@
+.form {
+   @include flex-col(center, center);
+   @include media() {
+   @include flex(center, center, row);
+   }
+    margin-bottom: 120px;
+    &__input {
+        max-width: 250px;
+        margin-bottom: 10px;
+        @include media() {
+            margin-bottom: 0;
+        }
+        width: 100%;
+        border: none;
+        outline: none;
+        padding: 22px 10px;
+        @include placeholder{
+           @include text($H10, 400, $P-HOLDER-COLOR);
+           @include media() {
+            @include text($H14, 400, $P-HOLDER-COLOR);
+           }
+            font-family: $BASE-FONT;
+            text-align: center;
+            letter-spacing: 2.8px;
+        }
+        @include media() {
+            padding: 22px 110px;
+            max-width: 500px;
+        }
+    }
+    &__button {
+        max-width: max-content;
+        min-width: 250px;
+        @include media() {
+            min-width: 150px;
+        }
+        cursor: pointer;
+        @include flex(center, center, row, nowrap);
+        padding: 18px 19px 18px 38px;
+        @include text($H14, 400, $WHITE);
+        font-family: $SECONDARY-FONT;
+        //line-height: 26px;
+        text-transform: uppercase;
+        letter-spacing: 1.4px;
+        background-color: $BUTTON-COLOR;
+        border: 2px solid $WHITE;
+        @include media() {
+            
+        }
+    }
+    &__button-image {
+        margin-left: 15px;
+    }
+}

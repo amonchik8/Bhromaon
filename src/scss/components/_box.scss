@@ -1,0 +1,37 @@
+.box {
+    @include flex-col;
+    max-width: 530px;
+    align-self: center;
+    opacity: 0.9;
+    &__description {
+        &:not(:last-child){
+            margin-bottom: 25px;
+        }
+        @include text($H16, 400, $FONT-COLOR);
+        letter-spacing: 1.6px;
+        line-height: 1.6;
+    }
+    &__subtitle {
+        @include text($H20, 400, $FONT-COLOR);
+        line-height: 1.6;
+        letter-spacing: 1.5px;
+        margin-bottom: 30px;
+    }
+    &__title {
+        @include text($H20, 400, $NAME-COLOR);
+        font-family: $BASE-FONT;
+        line-height: 1.6;
+        text-align: left;
+        text-transform: uppercase;
+        margin-bottom: 33px;
+    }
+    &__quote {
+        color: $DARKENBLUE;
+    }
+    &__button {
+        width: 200px;
+        @include media() {
+            width: 260px;
+        }
+    }
+}

@@ -1,0 +1,29 @@
+.icon-box {
+    @include media() {
+        &:not(:last-child) {
+            margin-right: 50px;
+        }
+        
+    }
+    @include flex-col;
+    align-items: center;
+    &:not(:last-child) {
+        margin: 40px 20px;
+
+    }
+    &__title {
+        @include text($H36, 400, $WHITE);
+        color: #e8e8e8;
+        font-family: $SECONDARY-FONT;
+        text-align: center;
+    }
+    &__icon {
+        @include flex;
+        width: 60px;
+        height: 60px;
+        margin-bottom: 34px;
+        &--search {
+            fill: $BUTTON-COLOR;
+        }
+    }
+}

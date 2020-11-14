@@ -1,0 +1,13 @@
+.container {
+    max-width: 1110px - 24px * 2;
+    margin: 0 auto;
+    &--panel-section {
+        max-width: 1044px - 24px * 2;
+        margin: 0 auto;
+    }
+    &--exterior {
+        max-width: 1110px - 24px * 2;
+        display: flex;
+        flex-basis: 50%;
+    }
+}

@@ -1,0 +1,27 @@
+.nav {
+    display: none;
+    @include media($screen-tablet + 1px ) {
+        display: block;
+    }
+    &__item {
+        display: inline;
+        @include text($H14, 400, $WHITE);
+        font-family: $SECONDARY-FONT;
+       // text-align: left;
+        text-transform: uppercase;
+        padding-top: 3px;
+        &:hover {
+            border-top: 3px solid $WHITE;
+        }
+        &:not(:last-child) {
+            margin-right: 40px;
+        }
+    }
+    &__item-anchor {
+        @include text($H14, 400, $WHITE);
+        &--mobile {
+            color: $BLACK;
+            text-transform: uppercase;
+        }
+    }
+}

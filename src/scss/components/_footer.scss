@@ -1,0 +1,21 @@
+.footer {
+    background-color: $FOOTER-COLOR;
+    @include flex;
+    &__container {
+        padding: 120px 24px 50px;
+    }
+    &__logo {
+        margin-bottom: 15px;
+        @include text($H24, 700, $WHITE);
+        font-family: $BASE-FONT;
+        text-transform: uppercase;
+        letter-spacing: 5.76px;
+    }
+    &__subtitle {
+        @include text($H16, 400, $WHITE);
+        font-family: $BASE-FONT;
+        text-align: center;
+        letter-spacing: 1.6px;
+        margin-bottom: 30px;
+    }
+}

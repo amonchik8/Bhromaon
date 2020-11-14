@@ -1,0 +1,13 @@
+.social {
+
+    &__item {
+        display: inline;
+        &:not(:last-child) {
+            margin-right: 24px;
+        }
+    }
+    &__icon {
+        width: 15px;
+        height: 15px;
+    }
+}

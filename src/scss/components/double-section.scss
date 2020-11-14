@@ -1,16 +1,34 @@
-/* .double-section    &#8220; {
+.double-section {
+    @include flex-col;
+    
     &__interior {
         background-image: url(../assets/images/double-1.png);
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
-        padding: 229px 0 100px;
+        padding: 229px 24px 100px;
     }
     &__exterior {
+        @include flex(flex-end, flex-end);
         background-image: url(../assets/images/double-2.png);
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
-        padding: 329px 0 100px;
+        padding: 329px 24px 100px;
     }
-} */
+    &__box {
+        background-color: $BG-BOX-COLOR;
+        padding: 50px 30px;
+    }
+    &__title {
+        @include text($H20, 400, $WHITE);
+        font-family: $BASE-FONT;
+        line-height: 1.6;
+        text-align: left;
+        text-transform: uppercase;
+        margin-bottom: 29px;
+    }
+    &__description {
+        letter-spacing: normal;
+    }
+}

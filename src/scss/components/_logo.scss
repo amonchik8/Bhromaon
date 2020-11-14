@@ -1,0 +1,7 @@
+.logo {
+    @include text($H24, 700, $WHITE);   
+    text-align: left;
+    text-transform: uppercase;
+    letter-spacing: 2.4px;
+    line-height: 1;
+}

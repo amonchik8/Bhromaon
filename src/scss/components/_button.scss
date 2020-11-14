@@ -1,0 +1,19 @@
+.button {
+    align-self: center;
+    cursor: pointer;
+    display: block;
+    @include text($H16, 400, $WHITE);
+    font-family: $SECONDARY-FONT;
+    text-transform: uppercase;
+    letter-spacing: 1.2px;
+    background-color: $BUTTON-COLOR;
+    width: 260px;
+    text-align: center;
+    padding: 20.4px 0;
+    margin-bottom: 20px;
+    @include media() {
+        margin-bottom: 0;
+        max-width: 225px;
+        align-self: flex-start;
+    }
+}

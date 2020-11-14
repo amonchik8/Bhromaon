@@ -1,0 +1,10 @@
+.title {
+    @include text($H36, 700, $WHITE);
+    @include media() {
+        @include text($H48, 700, $WHITE);
+    }
+    font-family: $BASE-FONT;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 4.8px;
+}

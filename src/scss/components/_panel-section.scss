@@ -1,0 +1,9 @@
+.panel-section {
+    background-color: $BG-SECTION-COLOR;
+    &__container {
+        padding: 80px 24px 120px;
+    }
+    &__main {
+        @include flex(center, center, row, wrap);
+    }
+}
