@@ -1,13 +1,12 @@
 .nav {
     display: none;
-    @include media($screen-tablet + 1px ) {
+    @include media($screen-tablet-large + 1px ) {
         display: block;
     }
     &__item {
         display: inline;
-        @include text($H14, 400, $WHITE);
+        @include text($H14, 700, $WHITE);
         font-family: $SECONDARY-FONT;
-       // text-align: left;
         text-transform: uppercase;
         padding-top: 3px;
         &:hover {
@@ -20,7 +19,7 @@
     &__item-anchor {
         @include text($H14, 400, $WHITE);
         &--mobile {
-            color: $BLACK;
+            color: $WHITE;
             text-transform: uppercase;
         }
     }

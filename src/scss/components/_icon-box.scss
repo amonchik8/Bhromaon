@@ -1,24 +1,26 @@
 .icon-box {
-    @include media() {
-        &:not(:last-child) {
-            margin-right: 50px;
-        }
-        
-    }
     @include flex-col;
     align-items: center;
-    &:not(:last-child) {
-        margin: 40px 20px;
-
+    margin: 40px 20px 0;
+    &__wrapper {
+        width: 100%;
+        @include flex(center, center, row, wrap);
+        z-index: 2;
+        position: relative;
+        top: -35px;
+        @include media() {
+            @include flex(space-between, center, row, wrap);
+        }
     }
     &__title {
-        @include text($H36, 400, $WHITE);
+        @include text($H36, 700, $WHITE);
         color: #e8e8e8;
         font-family: $SECONDARY-FONT;
         text-align: center;
     }
     &__icon {
         @include flex;
+        background-color: $BG-SECTION-COLOR;
         width: 60px;
         height: 60px;
         margin-bottom: 34px;

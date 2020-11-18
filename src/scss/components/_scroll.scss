@@ -4,11 +4,11 @@
     text-align: center;
     letter-spacing: 2.8px;
     margin-bottom: 15px;
-    @include flex-col;
+    @include flex-col(center, center);
     &__icon {
-        display: flex;
+        display: block;
         text-align: center;
-        margin-bottom: 135px;
         justify-content: center;
+        margin-bottom: 15px;
     }
 }

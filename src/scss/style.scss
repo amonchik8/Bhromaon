@@ -2,7 +2,7 @@
 @import './core/mixins';
 @import './core/common';
 
-@import url('https://fonts.googleapis.com/css2?family=Aleo:ital,wght@0,300;1,400;1,700&family=Josefin+Sans:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Aleo:ital,wght@0,300;1,400;1,700&family=Josefin+Sans:wght@300;400;700&display=swap');
 
 @import './components/button';
 @import './components/nav';
@@ -17,6 +17,7 @@
 @import './components/social';
 @import './components/mobile-menu';
 @import './components/burger';
+@import './components/anchor';
 
 
 
@@ -28,7 +29,7 @@
 
 @import './components/panel-section';
 
-@import './components/double-section.scss';
+@import './components/country-section.scss';
 
 @import './components/quote-section';
 

@@ -1,35 +1,41 @@
 .box {
-    @include flex-col;
-    max-width: 530px;
-    align-self: center;
+    @include flex-col(flex-start, center);
+    @include media() {
+        @include flex-col(flex-start, flex-start);
+    }
+    max-width: 590px;
     opacity: 0.9;
     &__description {
-        &:not(:last-child){
+        &:not(:last-of-type){
             margin-bottom: 25px;
         }
-        @include text($H16, 400, $FONT-COLOR);
-        letter-spacing: 1.6px;
+        &:last-of-type{
+            margin-bottom: 48px;
+        }
+        @include text($H16, 300, $FONT-COLOR);
         line-height: 1.6;
+        text-align: justify;
+        @include media() {
+            text-align: left;
+        }
     }
     &__subtitle {
         @include text($H20, 400, $FONT-COLOR);
-        line-height: 1.6;
         letter-spacing: 1.5px;
         margin-bottom: 30px;
     }
     &__title {
-        @include text($H20, 400, $NAME-COLOR);
+        @include text($H20, 300, $NAME-COLOR);
         font-family: $BASE-FONT;
-        line-height: 1.6;
-        text-align: left;
         text-transform: uppercase;
-        margin-bottom: 33px;
+        margin-bottom: 30px;
+        letter-spacing: normal;
     }
     &__quote {
         color: $DARKENBLUE;
     }
     &__button {
-        width: 200px;
+        width: 100%;
         @include media() {
             width: 260px;
         }

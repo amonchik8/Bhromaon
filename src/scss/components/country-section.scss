@@ -1,0 +1,24 @@
+.country-section {
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        @include media() {
+            padding: 229px 24px 100px;
+        }
+        padding: 115px 24px 50px;
+        &__container {
+            @include flex(flex-end);
+        }
+            &:nth-child(even) {
+            @include flex(flex-start);
+            background-image: url(../assets/images/double-1.png);
+            }
+            &:nth-child(odd) {
+            @include flex(flex-end);
+            background-image: url(../assets/images/double-2.png);
+            }
+    &__box {
+        background-color: $BG-BOX-COLOR;
+        padding: 50px 30px;
+    }
+}

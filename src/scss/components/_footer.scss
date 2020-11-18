@@ -1,8 +1,11 @@
 .footer {
     background-color: $FOOTER-COLOR;
-    @include flex;
     &__container {
-        padding: 120px 24px 50px;
+        @include media() {
+            padding: 120px 24px 50px;
+        }
+        padding: 60px 24px 25px;
+        @include flex(center, center, column);
     }
     &__logo {
         margin-bottom: 15px;
@@ -10,6 +13,9 @@
         font-family: $BASE-FONT;
         text-transform: uppercase;
         letter-spacing: 5.76px;
+        @include hover() {
+            color: $DARKENBLUE;
+        }
     }
     &__subtitle {
         @include text($H16, 400, $WHITE);

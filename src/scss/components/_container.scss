@@ -1,13 +1,14 @@
 .container {
-    max-width: 1110px - 24px * 2;
+    max-width: 1110px + 24px * 2;
     margin: 0 auto;
-    &--panel-section {
-        max-width: 1044px - 24px * 2;
-        margin: 0 auto;
+    flex-grow: 1;
+    &--header {
+        @include flex-col(flex-start, stretch);
+        max-width: calc(100% - 24px * 2);
+        min-width: calc(100% - 24px * 2);
     }
-    &--exterior {
-        max-width: 1110px - 24px * 2;
-        display: flex;
-        flex-basis: 50%;
+    &--panel-section {
+        max-width: 975px + 24px * 2;
+        margin: 0 auto;
     }
 }

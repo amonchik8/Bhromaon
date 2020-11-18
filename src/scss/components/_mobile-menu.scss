@@ -2,7 +2,8 @@
     height: 100%;
     @include flex(center, center);
     position: relative;
-    @include media($screen-tablet + 1px) {
+    z-index: 5;
+    @include media($screen-tablet-large + 1px) {
         display: none;
     }
     &__input {
@@ -38,7 +39,7 @@
     &__list {
         @include flex(center, flex-end, column);
         padding: 24px;
-        background-color: $WHITE;
+        background-color: $DARKENBLUE;
         width: 100%;
     }
     &__item {

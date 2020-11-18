@@ -1,7 +1,7 @@
 .button {
     align-self: center;
     cursor: pointer;
-    display: block;
+    display: inline-block;
     @include text($H16, 400, $WHITE);
     font-family: $SECONDARY-FONT;
     text-transform: uppercase;
@@ -11,9 +11,31 @@
     text-align: center;
     padding: 20.4px 0;
     margin-bottom: 20px;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
     @include media() {
         margin-bottom: 0;
         max-width: 225px;
         align-self: flex-start;
-    }
-}
+        &:before {
+            content: "";
+            background-color: $HOVER-COLOR;
+            height: 100%;
+            width: 100%;
+            display: block;
+            position: absolute;
+            top: 0;
+            right: -5em;
+            transform: skewX(45deg) translateX(0);
+            transition: all 0.9s ease;
+            z-index: -1;
+        }
+        &:hover {
+            background-color: $BUTTON-COLOR;
+            &:before {
+                transform: skewX(45deg) translateX(13.5em);
+            }
+        }
+    }  
+} 

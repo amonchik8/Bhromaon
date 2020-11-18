@@ -4,18 +4,20 @@
     background-repeat: no-repeat;
     background-size: cover;
     &__container {
-        padding: 120px 24px;
+        @include media() {
+            padding: 120px 24px;
+        }
+        padding: 60px 24px;
     }
     &__main {
-        @include media() {
-            @include flex();
+        @include media($screen-tablet-large) {
+            @include flex(space-between);
         }
         @include flex(center, center);
         flex-wrap: wrap;
-        
     }
     &__title {
-        @include text($H36, 400, $WHITE);
+        @include text($H36, 700, $WHITE);
         font-family: $SECONDARY-FONT;
         margin-bottom: 62px;
         text-transform: none;
@@ -25,9 +27,13 @@
         }
     }
     &__box {
-        @include media() {
-            margin-right: 105px;
+        opacity: 1;
+        max-width: 569px;
+        @include media($screen-tablet-large) {
+            margin-right: 30px;
         }
-        
+    }
+    &__description {
+        letter-spacing: 1.6px;
     }
 }
